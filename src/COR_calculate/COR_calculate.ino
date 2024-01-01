@@ -12,7 +12,7 @@ float d = -1.2;
 float rpm = 0;
 
 void setup() {
-  Serial.println(micro());
+  Serial.println(micros());
   //(500/sqrt(1.118))
   //sqrt(sq(a)+sq(b))
   //sqrt( sq(sqrt(2)*(-a-b+c+d)+30) + 2 * sq(a-b-c+d) )
@@ -28,7 +28,7 @@ void setup() {
 
 
   Serial.println(rpm);
-  Serial.println(micro());
+  Serial.println(micros());
 }
 
 void loop() {
