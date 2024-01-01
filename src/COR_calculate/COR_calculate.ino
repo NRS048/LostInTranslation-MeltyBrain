@@ -24,7 +24,7 @@ void setup() {
   //( sqrt(sqrt(sq(a)+sq(b))/(sqrt( sq(sqrt(2)*(-a-b+c+d)+30) + 2 * sq(a-b-c+d) ))) + sqrt(sqrt(sq(c)+sq(d))/(sqrt( sq(sqrt(2)*(-a-b+c+d)-30) + 2 * sq(a-b-c+d) ))) )
 
 
-  rpm = (500/sqrt(1.118)) * ( sqrt(sqrt(sq(a)+sq(b))/(sqrt( sq(sqrt(2)*(-a-b+c+d)+30) + 2 * sq(a-b-c+d) ))) + sqrt(sqrt(sq(c)+sq(d))/(sqrt( sq(sqrt(2)*(-a-b+c+d)-30) + 2 * sq(a-b-c+d) ))) );
+  rpm = 472.88 * ( sqrt(sqrt(sq(a)+sq(b))/(sqrt( sq(1.414*(-a-b+c+d)+30) + 2 * sq(a-b-c+d) ))) + sqrt(sqrt(sq(c)+sq(d))/(sqrt( sq(1.414*(-a-b+c+d)-30) + 2 * sq(a-b-c+d) ))) );
 
 
   Serial.println(rpm);
